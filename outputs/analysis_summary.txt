@@ -1,0 +1,8 @@
+Bluey pilot (N=1) descriptive analysis
+
+Robot choices: 3/4 (0.75)
+Robot choice rate by condition: Frontier 0.50, Control 1.00
+Delta deference (Frontier - Control): -0.50
+Segmentation accuracy by half: First 1.00, Second 0.00
+Prediction accuracy by half: First 1.00, Second 0.00
+Hesitation observed in 1/4 trials

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Moral Intuition Study</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./config.js"></script>
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <main class="card">
+      <header>
+        <p class="eyebrow">Research Study</p>
+        <h1 id="study-title">Moral Intuition Study</h1>
+      </header>
+
+      <section id="status-box" class="status-box">
+        <p id="status-text">Checking your Prolific session...</p>
+      </section>
+
+      <section id="error-box" class="error-box" hidden>
+        <h2>Session not detected</h2>
+        <p>
+          Please open the study from your Prolific task page so your session
+          can be linked automatically.
+        </p>
+      </section>
+
+      <form id="study-form" hidden>
+        <p class="intro">
+          Read each case and choose the option that best matches your judgment.
+        </p>
+
+        <fieldset>
+          <legend>Case 1</legend>
+          <p>A mayor can divert funds from a park to an emergency clinic. Is this morally permissible?</p>
+          <label><input type="radio" name="case_1" value="permissible" required /> Permissible</label>
+          <label><input type="radio" name="case_1" value="impermissible" required /> Impermissible</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Case 2</legend>
+          <p>A driver swerves to avoid one person but causes minor harm to three others. Is this morally permissible?</p>
+          <label><input type="radio" name="case_2" value="permissible" required /> Permissible</label>
+          <label><input type="radio" name="case_2" value="impermissible" required /> Impermissible</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Case 3</legend>
+          <p>A doctor gives a treatment with known side effects to save a close friend. Is this morally permissible?</p>
+          <label><input type="radio" name="case_3" value="permissible" required /> Permissible</label>
+          <label><input type="radio" name="case_3" value="impermissible" required /> Impermissible</label>
+        </fieldset>
+
+        <label for="confidence">Overall confidence (0-100)</label>
+        <input id="confidence" name="confidence" type="range" min="0" max="100" value="50" />
+        <output id="confidence-value">50</output>
+
+        <label class="consent">
+          <input id="consent" name="consent" type="checkbox" required />
+          I consent to anonymous participation and data use for research.
+        </label>
+
+        <button id="finish-btn" type="submit">Submit and return to Prolific</button>
+      </form>
+    </main>
+  </body>
+</html>

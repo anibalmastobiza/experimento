@@ -4,7 +4,8 @@
       STUDY_TITLE: "Moral Intuition Study",
       GAS_ENDPOINT: "",
       PROLIFIC_COMPLETION_URL: "",
-      REDIRECT_DELAY_MS: 900
+      REDIRECT_DELAY_MS: 900,
+      ALLOW_PREVIEW_WITHOUT_PROLIFIC: true
     },
     window.STUDY_CONFIG || {}
   );
@@ -12,12 +13,12 @@
   const els = {
     title: document.getElementById("study-title"),
     statusText: document.getElementById("status-text"),
-    statusBox: document.getElementById("status-box"),
     errorBox: document.getElementById("error-box"),
     form: document.getElementById("study-form"),
     finishBtn: document.getElementById("finish-btn"),
     confidence: document.getElementById("confidence"),
-    confidenceValue: document.getElementById("confidence-value")
+    confidenceValue: document.getElementById("confidence-value"),
+    previewBtn: document.getElementById("preview-btn")
   };
 
   els.title.textContent = cfg.STUDY_TITLE;
@@ -25,42 +26,89 @@
     els.confidenceValue.textContent = String(els.confidence.value);
   });
 
-  const session = getProlificSession_();
-  if (!session.isValid) {
-    showError_("Missing Prolific URL parameters.");
+  const params = new URLSearchParams(window.location.search);
+  const queryWantsPreview = params.get("preview") === "1" || params.get("test") === "1";
+  const realSession = getProlificSession_(params);
+
+  if (realSession.isValid) {
+    startStudy_(realSession, false);
     return;
   }
 
-  if (!cfg.GAS_ENDPOINT || !cfg.PROLIFIC_COMPLETION_URL) {
-    showError_("Missing configuration in config.js.");
+  if (cfg.ALLOW_PREVIEW_WITHOUT_PROLIFIC || queryWantsPreview) {
+    startStudy_(makePreviewSession_(), true);
     return;
   }
 
-  const condition = assignCondition_(session.prolificPid);
-  updateStatus_("Session linked. You can start.");
-  els.form.hidden = false;
-
-  fireAndForgetLog_("arrival", {
-    condition: condition,
-    responses: ""
+  showError_("Missing Prolific URL parameters.");
+  els.previewBtn.hidden = false;
+  els.previewBtn.addEventListener("click", function () {
+    startStudy_(makePreviewSession_(), true);
   });
 
-  els.form.addEventListener("submit", async function (event) {
-    event.preventDefault();
-    els.finishBtn.disabled = true;
-    updateStatus_("Saving your responses...");
+  function startStudy_(session, isPreviewMode) {
+    const hasEndpoint = isConfiguredUrl_(cfg.GAS_ENDPOINT);
+    const hasCompletionUrl = isConfiguredUrl_(cfg.PROLIFIC_COMPLETION_URL);
+    const canLog = hasEndpoint;
 
-    const payload = collectResponses_();
-    await fireAndForgetLog_("finish", {
-      condition: condition,
-      responses: JSON.stringify(payload)
+    if (!isPreviewMode && (!hasEndpoint || !hasCompletionUrl)) {
+      showError_("Missing configuration in config.js.");
+      return;
+    }
+
+    els.errorBox.hidden = true;
+    els.form.hidden = false;
+    els.finishBtn.disabled = false;
+
+    if (isPreviewMode) {
+      updateStatus_("Preview mode enabled. Responses will not redirect to Prolific.");
+    } else {
+      updateStatus_("Session linked. You can start.");
+    }
+
+    const condition = assignCondition_(session.prolificPid);
+    if (canLog) {
+      fireAndForgetLog_(session, "arrival", {
+        condition: condition,
+        responses: ""
+      });
+    }
+
+    bindSubmitOnce_(async function () {
+      els.finishBtn.disabled = true;
+      updateStatus_("Saving your responses...");
+
+      const payload = collectResponses_();
+      if (canLog) {
+        await fireAndForgetLog_(session, "finish", {
+          condition: condition,
+          responses: JSON.stringify(payload)
+        });
+      }
+
+      if (isPreviewMode || !hasCompletionUrl) {
+        updateStatus_("Preview complete. No Prolific redirect in preview mode.");
+        els.finishBtn.disabled = false;
+        return;
+      }
+
+      updateStatus_("Done. Redirecting to Prolific...");
+      setTimeout(function () {
+        window.location.assign(cfg.PROLIFIC_COMPLETION_URL);
+      }, cfg.REDIRECT_DELAY_MS);
     });
+  }
 
-    updateStatus_("Done. Redirecting to Prolific...");
-    setTimeout(function () {
-      window.location.assign(cfg.PROLIFIC_COMPLETION_URL);
-    }, cfg.REDIRECT_DELAY_MS);
-  });
+  function bindSubmitOnce_(handler) {
+    if (els.form.dataset.bound === "1") {
+      return;
+    }
+    els.form.dataset.bound = "1";
+    els.form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      handler();
+    });
+  }
 
   function collectResponses_() {
     const data = new FormData(els.form);
@@ -73,7 +121,7 @@
     };
   }
 
-  function fireAndForgetLog_(eventType, fields) {
+  function fireAndForgetLog_(session, eventType, fields) {
     const form = new URLSearchParams();
     const payload = Object.assign(
       {
@@ -109,8 +157,7 @@
     });
   }
 
-  function getProlificSession_() {
-    const params = new URLSearchParams(window.location.search);
+  function getProlificSession_(params) {
     const prolificPid = params.get("PROLIFIC_PID") || params.get("prolific_pid") || "";
     const studyId = params.get("STUDY_ID") || params.get("study_id") || "";
     const sessionId = params.get("SESSION_ID") || params.get("session_id") || "";
@@ -120,6 +167,15 @@
       studyId: studyId,
       sessionId: sessionId,
       isValid: Boolean(prolificPid && studyId && sessionId)
+    };
+  }
+
+  function makePreviewSession_() {
+    return {
+      prolificPid: "preview_pid",
+      studyId: "preview_study",
+      sessionId: "preview_session",
+      isValid: true
     };
   }
 
@@ -144,6 +200,15 @@
     return "evt_" + Date.now() + "_" + Math.floor(Math.random() * 1e6);
   }
 
+  function isConfiguredUrl_(value) {
+    return Boolean(
+      value &&
+      /^https?:\/\//i.test(value) &&
+      value.indexOf("PASTE_") === -1 &&
+      value.indexOf("REPLACE_ME") === -1
+    );
+  }
+
   function showError_(msg) {
     els.errorBox.hidden = false;
     els.form.hidden = true;
@@ -154,3 +219,4 @@
     els.statusText.textContent = msg;
   }
 })();
+

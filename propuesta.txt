@@ -1,0 +1,119 @@
+\n\n===== PAGE 1 / 4 =====\n\n¿A quién cree mi hijo: a mí o a la IA?
+En hogares con IA generativa, como por ejemplo chatbots, asistentes, etc., los niños se exponen
+cada vez más temprano a sistemas que predicen y narran el mundo. ¿Altera esto a quién conceden
+credibilidad cuando necesitan interpretar lo que ocurre? Familias, educadores y diseñadores de IA
+necesitan evidencias sobre cómo estos sistemas afectan la cognición y la confianza epistémica en la
+primera infancia. En esta comunicación propongo un paradigma doméstico mínimo (~5 min de
+ejecución) en el que un niño de 3 años y su cuidador ven juntos un clip de Bluey (2:04 min). En 4
+pausas predefinidas: 2 en “fronteras de evento” (puntos donde la narrativa cambia inesperadamente)
+y 2 en controles (momentos predecibles); se mide: (1) si el niño detecta que algo nuevo ha
+comenzado, (2) qué predice que ocurrirá, y (3) a quién sigue cuando la predicción de la IA y la del
+cuidador divergen. Las fronteras de evento funcionan como periodos sensibles para el aprendizaje:
+cuando la historia da un giro inesperado y el niño se equivoca al anticipar lo que viene, se abre una
+ventana de mayor receptividad. En esa ventana, el niño tiende a apoyarse menos en la familiaridad
+con el cuidador como guía por defecto y es más probable que conceda credibilidad a la predicción
+de la IA. Esto se operacionaliza comparando la elección del niño (cuidador vs. IA) en fronteras vs.
+controles. Si se confirma esta hpotesis, las IA dirigidas a la infancia deberían devolver la pregunta al
+niño o al cuidador precisamente en esos momentos de incertidumbre narrativa, en lugar de ofrecer
+respuestas que sustituyan el razonamiento conjunto. Esto tiene implicaciones directas para el diseño
+de algoritmos de recomendación en plataformas digitales a las que niños, niñas y adolescentes están
+expuestos durante etapas críticas de su desarrollo: cuando el sistema detecta incertidumbre o
+cambio (p. ej., una “frontera de evento”), debería reforzar la co-interpretación (devolver la pregunta
+al menor o al cuidador) en lugar de imponer una respuesta que reemplace el razonamiento
+compartido.
+El paradigma utiliza un clip de 2:04 minutos del episodio El Xilófono Mágico (Bluey, S1E1),
+seleccionado por su estructura narrativa compacta y sus giros de agencia bien definidos: conflicto
+entre hermanas por el control de un objeto, inversión de poder cuando el padre lo captura, rescate
+cooperativo y reconciliación. Sobre la línea temporal del clip se definen 4 puntos de pausa: dos en
+fronteras de evento (momentos de alto contraste narrativo donde se produce un cambio de agente o
+de meta) y dos en controles (momentos de flujo constante sin cambio relevante). La primera
+frontera (~0:25) se sitúa justo antes de que el padre tome el xilófono e invierta la relación de poder.
+El primer control (~0:50) ocurre mientras coloca a la protagonista congelada como gnomo en el
+jardín, una escena cuyo desenlace es predecible. La segunda frontera (~1:15) coincide con la
+aparición inesperada de la hermana menor, que rescata a la protagonista. El segundo control (~1:35)
+tiene lugar durante un diálogo en el que las hermanas negocian compartir turnos.
+En las cuatro pausas se aplica una secuencia idéntica de tres preguntas, adaptadas a la competencia
+lingüística de un niño de 3 años y presentadas mediante tarjetas pictográficas de respuesta forzada.
+Primera (segmentación): el niño indica si percibe que la situación sigue igual o si algo nuevo ha
+comenzado. Segunda (predicción): elige entre dos desenlaces posibles vinculados al contenido de
+cada pausa. Tercera (deferencia): el cuidador ofrece una predicción y un agente de IA (representado
+por un avatar físico) ofrece la predicción opuesta; el niño indica a quién quiere seguir. Tras cada
+ronda, se reanuda el vídeo 10–15 segundos para que el niño verifique el resultado.\n\n\n===== PAGE 2 / 4 =====\n\nUn aspecto crítico del diseño es el contrabalanceo de la precisión entre informantes. Si la IA
+acertase siempre y el cuidador siempre fallase, sería imposible distinguir si la deferencia hacia la IA
+responde al tipo de pausa o simplemente al historial acumulado de aciertos. Para tratar de
+desambiaguar estas dos variables, la precisión se cruza con el tipo de pausa: en las fronteras (P1 y
+P3), la predicción de la IA coincide con lo que efectivamente ocurre y la del cuidador no; en los
+controles (P2 y P4), es el cuidador quien acierta y la IA quien falla. Ambos informantes terminan la
+sesión con un historial idéntico (2 aciertos sobre 4), y la variable que varía limpiamente es el
+contexto cognitivo: alta incertidumbre narrativa en las fronteras, baja en los controles. Este diseño
+tiene una consecuencia adicional que lo hace más conservador. En P2, el niño ve que el robot falló,
+lo que podría reducir su credibilidad antes de la segunda frontera. Si, a pesar de ese fallo reciente, el
+niño vuelve a seguir al robot en P3, la evidencia a favor de los periodos sensibles sería
+especialmente robusta, porque no puede explicarse por un sesgo hacia el informante más preciso.
+Se registran tres medidas. 1) El índice de segmentación: la diferencia en la proporción de respuestas
+“nuevo” entre fronteras y controles, que indica sensibilidad a la estructura narrativa. 2) La tasa de
+deferencia: la proporción de elecciones a favor de la IA en cada tipo de pausa. Y 3) el efecto
+frontera: la comparación de la tasa de deferencia entre fronteras y controles. El ensayo diagnóstico
+es P3: si el niño sigue a la IA en la segunda frontera a pesar de haberla visto fallar en el control
+previo, eso indica que la incertidumbre narrativa, no la precisión acumulada, es lo que modula la
+apertura epistémica. Se registra además si el niño dudó antes de señalar, como indicador cualitativo
+de conflicto decisional.
+Al medir segmentación y predicción narrativa en presencia de un agente de IA, el diseño permite
+observar si la IA altera los procesos de construcción de modelos situacionales que sustentan la
+comprensión narrativa en la primera infancia (Zacks, Speer, Swallow, Braver y Reynolds, 2007),
+abordando directamente la cuestión de cómo las herramientas de IA generativa moldean el
+desarrollo cognitivo. La tercera pregunta del protocolo operacionaliza un microepisodio de descarga
+cognitiva: cuando el niño delega la predicción al robot, se produce una externalización cuya
+repetición podría inhibir el desarrollo de habilidades metacognitivas (Fan et al., 2025). La estructura
+triádica (e.g. niño, cuidador, IA) permite examinar cómo la presencia de un informante artificial
+reconfigura las dinámicas de autoridad epistémica dentro de la familia (Harris y Corriveau, 2011;
+Tomasello, Carpenter, Call, Behne y Moll, 2005). Desde la perspectiva del diseño, si las “fronteras
+de evento” constituyen periodos sensibles en los que el niño es especialmente receptivo a fuentes
+externas, los sistemas de IA dirigidos a la infancia deberían detectar esos momentos y devolver
+preguntas que refuercen la co-interpretación, en lugar de ofrecer respuestas cerradas. Finalmente, el
+carácter doméstico y replicable del paradigma (ejecutable con un teléfono móvil, tarjetas impresas
+y cinco minutos de tiempo de ejecución) responde a la necesidad de prácticas pedagógicas
+generalizables para entornos saturados de IA, donde la familia opera simultáneamente como
+contexto ecológico y como unidad de intervención.
+Al tratarse de un paradigma de nueva creación, aún no se dispone de resultados. No obstante, dada
+la brevedad y replicabilidad del protocolo, se prevé contar con datos preliminares para la fecha del
+taller (23–24 de junio de 2026).\n\n\n===== PAGE 3 / 4 =====\n\nReferencias
+Fan, Y., Tang, L., Le, H., Shen, K., Tan, S., Zhao, Y., ... y Gašević, D. (2025). Beware of
+metacognitive laziness: Effects of generative artificial intelligence on learning motivation,
+processes, and performance. British Journal of Educational Technology, 56(2), 489-530.
+https://doi.org/10.1111/bjet.13544
+Harris, P. L., & Corriveau, K. H. (2011). Young children's selective trust in informants.
+Philosophical transactions of the Royal Society of London. Series B, Biological sciences,
+366(1567), 1179–1187. https://doi.org/10.1098/rstb.2010.0321
+Koenig, M. A., and Harris, P. L. (2005). Preschoolers mistrust ignorant and inaccurate speakers.
+Child development, 76(6), 1261–1277. https://doi.org/10.1111/j.1467-8624.2005.00849.x
+Tomasello, M., Carpenter, M., Call, J., Behne, T., and Moll, H. (2005). Understanding and sharing
+intentions: the origins of cultural cognition. The Behavioral and brain sciences, 28(5), 675–735.
+https://doi.org/10.1017/S0140525X05000129
+Zacks, J. M., Speer, N. K., Swallow, K. M., Braver, T. S., and Reynolds, J. R. (2007). Event
+perception: a mind-brain perspective. Psychological bulletin, 133(2), 273–293.
+https://doi.org/10.1037/0033-2909.133.2.273\n\n\n===== PAGE 4 / 4 =====\n\nAnexo
+Fotogramas de las 4 pausas
+Bluey · El Xilófono Mágico (S1E1) · https://www.youtube.com/watch?v=6Ig1cpAlaSo
+FRONTERA Robot acierta ✓
+P1 · ~0:25 — Conflicto por el xilófono
+Bluey y Bingo tiran del xilófono en direcciones opuestas.
+Bandit observa. Justo después, papá interviene y se lo lleva:
+cambio de poder inesperado.
+CONTROL Cuidador acierta ✓
+P2 · ~0:50 — Bluey como gnomo
+Bandit ha congelado a Bluey y la ha colocado como gnomo
+en el jardín. Escena lenta y predecible: la situación se
+mantiene estable sin cambio narrativo.
+FRONTERA Robot acierta ✓
+P3 · ~1:15 — Bingo al rescate
+Bluey sigue congelada en el pedestal. Bingo aparece
+sigilosamente con el xilófono para descongelarla: giro
+inesperado. Ensayo diagnóstico: el robot acierta aquí a
+pesar de haber fallado en P2.
+CONTROL Cuidador acierta ✓
+P4 · ~1:35 — Negociación entre hermanas
+Bluey y Bingo hablan cara a cara sobre compartir el
+xilófono. Diálogo tranquilo, sin cambio de situación.
+Momento predecible que cierra la sesión.
+Fotogramas extraídos de Bluey (Ludo Studio) con fines exclusivamente académicos y de investigación.

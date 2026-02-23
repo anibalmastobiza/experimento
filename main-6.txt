@@ -1,0 +1,660 @@
+\n\n===== PAGE 1 / 49 =====\n\n¿A quién cree mi hijo: a mí o a la IA?
+Fronteras de evento, confianza epistémica y deferencia
+hacia la IA en la primera infancia
+Aníbal M. Astobiza
+23–24 de junio, 2026
+Taller: Crecer con IA: Perspectivas sobre el desarrollo cognitivo y afectivo
+Universidad de Granada\n\n\n===== PAGE 2 / 49 =====\n\nEstructura de la presentación
+El mundo cognitivo a los 3 años
+El paradigma: diseño y justificación
+Resultados del piloto (N=1)
+Implicaciones teóricas
+Implicaciones para el diseño de IA infantil
+Lecciones y próximos pasos
+Conclusión
+2/41\n\n\n===== PAGE 3 / 49 =====\n\nEl mundo cognitivo a los 3
+años\n\n\n===== PAGE 4 / 49 =====\n\n¿Qué sabe un niño de 3 años sobre el mundo?
+La psicología del desarrollo ha documentado que, a los 3 años, el niño dispone de al menos
+cuatro sistemas nucleares de conocimiento que operan desde la infancia temprana:
+Dominios de conocimiento nuclear
+Idea central
+1. Física intuitiva
+2. Biología intuitiva
+3. Mundo social / Teoría de la Mente
+4. Cognición numérica
+Los bebés no son tabulae rasae: nacen con
+expectativas estructuradas sobre objetos,
+agentes y causalidad que se refinan con la
+experiencia.
+Spelke, E. S. (2000). Core knowledge. American Psychologist,
+55(11), 1233–1243.
+3/41\n\n\n===== PAGE 5 / 49 =====\n\nConocimiento nuclear: el marco de Spelke y Carey
+Física intuitiva
+Objetos, causalidad
+continuidad
+Biología intuitiva
+Vivo/no-vivo
+crecimiento
+Mundo social
+Agencia, metas
+Teoría de la Mente
+Baillargeon (1987)
+Spelke (1990)
+Carey (1985)
+Gelman (1990)
+Meltzoff (1995)
+Tomasello (2005)
+Carey, S. (2009). The Origin of Concepts. Oxford University Press.
+Número
+Cantidad aproximada
+correspondencia
+Feigenson et al.
+(2004)
+4/41\n\n\n===== PAGE 6 / 49 =====\n\nFísica intuitiva: lo que el niño espera de los objetos
+A los 3 años, la física intuitiva está consolidada. El niño espera:
+• Permanencia del objeto: los objetos
+continúan existiendo cuando desaparecen de la
+vista (Baillargeon, 1987).
+• Continuidad espacio-temporal: un objeto no
+puede estar en dos sitios a la vez ni atravesar
+superficies sólidas.
+• Causalidad por contacto: los efectos
+requieren contacto físico entre agente y
+paciente (Leslie & Keeble, 1987).
+• Gravedad e inercia: expectativas sobre
+trayectorias y soporte.
+Baillargeon, R. (1987). Object permanence in 3.5- and 4.5-month-old infants. Dev. Psychol., 23(5), 655–664.
+Relevancia para el paradigma
+En el clip de Bluey, el xilófono cambia
+de manos. El niño espera que quien lo
+tiene actúe con él. Cuando el padre lo
+toma inesperadamente → violación
+de expectativa → frontera de evento.
+5/41\n\n\n===== PAGE 7 / 49 =====\n\nBiología intuitiva: la distinción vivo / no-vivo
+A los 3 años, los niños distinguen entre entidades
+vivas y artefactos, pero la frontera es porosa:
+• Esencialismo: los seres vivos tienen una
+“esencia” interna que determina su categoría
+(Gelman, 2003).
+• Crecimiento y herencia: expectativa de que
+los animales crecen, las máquinas no.
+• Zona gris: los robots con comportamiento
+agentivo generan confusión ontológica —el
+niño no los clasifica claramente como vivos ni
+como inertes.
+Gelman, S. A. (2003). The Essential Child. Oxford University Press.
+Implicación
+La categorización ambigua del robot
+como “casi-agente” podría amplificar
+la atracción por novedad: el niño
+interactúa con algo que viola sus
+categorías biológicas básicas.
+Kahn, P. H., et al. (2012). Robovie, you’ll have to go into
+the closet now. Dev. Psychol., 48(2), 303–314.
+6/41\n\n\n===== PAGE 8 / 49 =====\n\nMundo social: Teoría de la Mente a los 3 años
+¿Qué puede hacer un niño de 3 años?
+• Imitación con intención: reproduce la meta
+del adulto, no solo la acción (Meltzoff, 1995).
+• Atención conjunta: triangulación
+niño–objeto–adulto consolidada desde los 12
+meses (Tomasello, 1995).
+• Deseo vs. creencia: comprende deseos
+diferentes a los propios, pero no pasa la falsa
+creencia (∼4 años) (Wellman & Liu, 2004).
+• Confianza selectiva: discrimina informantes
+fiables de no fiables (Koenig & Harris, 2005).
+Wellman, H. M., & Liu, D. (2004). Scaling of Theory-of-Mind tasks. Child Dev., 75(2), 523–541.
+Escala de Wellman & Liu (2004)
+Progresión a los 3 años:
+✓ Deseos diversos
+✓ Creencias diversas
+× Acceso al conocimiento
+× Falsa creencia
+× Emoción oculta
+7/41\n\n\n===== PAGE 9 / 49 =====\n\nMeltzoff: la hipótesis “Like Me”
+Percepción
+del otro
+Mapeo
+supramodal
+Experiencia
+propia
+Inferencia
+de estado mental
+El niño usa su propio cuerpo como modelo analógico del otro. Cuando el “otro” es un robot, el
+mapeo se activa parcialmente: hay movimiento dirigido a metas, pero no hay rostro humano ni
+retroalimentación emocional.
+Meltzoff, A. N. (2007). ‘Like me’: A foundation for social cognition. Dev. Sci., 10(1), 126–134.
+8/41\n\n\n===== PAGE 10 / 49 =====\n\nConfianza selectiva: ¿a quién creer?
+La literatura de selective trust muestra que, desde
+los 3 años, los niños evalúan informantes según:
+• Historial de precisión: prefieren a quien
+acertó antes (Koenig & Harris, 2005).
+• Familiaridad: sesgo hacia el cuidador o
+informante conocido (Corriveau & Harris, 2009).
+• Consenso: siguen a la mayoría cuando hay
+conflicto (Corriveau et al., 2009).
+• Benevolencia percibida: prefieren
+informantes que parecen querer ayudar.
+Corriveau, K. H., & Harris, P. L. (2009). Choosing your informant. Cognitive Dev., 24(4), 411–422.
+Tensión en nuestro paradigma
+El niño se enfrenta a un conflicto
+entre:
+• Familiaridad → cuidador
+• Novedad → robot
+• Precisión reciente → variable
+¿Cuál domina en cada contexto
+narrativo?
+9/41\n\n\n===== PAGE 11 / 49 =====\n\nPercepción de eventos y segmentación narrativa
+Event Segmentation Theory (Zacks et al., 2007):
+• El flujo perceptivo continuo se segmenta en
+unidades discretas (eventos) delimitadas por
+fronteras.
+• En las fronteras, el modelo predictivo del
+observador falla → se actualiza → se abre una
+ventana de mayor codificación.
+• Evidencia en adultos: mejor memoria para
+información presentada en fronteras (Swallow et
+al., 2009).
+Zacks, J. M., et al. (2007). Event perception: A mind–brain perspective. Psychol. Bull., 133(2), 273–293.
+¿Y en niños de 3 años?
+Pocos estudios directos. Pero la
+capacidad de segmentar eventos está
+presente desde los 10 meses (Baldwin et
+al., 2001). A los 3 años, la segmentación
+guía comprensión narrativa y
+predicción.
+10/41\n\n\n===== PAGE 12 / 49 =====\n\nFronteras como periodos sensibles: la hipótesis central
+Apertura epistémica
+Evento A F Evento B F Evento C
+tiempo
+Error predictivo
+Hipótesis: En las fronteras, el error predictivo eleva la apertura epistémica. El niño es más
+receptivo a fuentes externas —incluyendo la IA.
+11/41\n\n\n===== PAGE 13 / 49 =====\n\nEl paradigma: diseño y
+justificación\n\n\n===== PAGE 14 / 49 =====\n\nMotivación: IA generativa en hogares con niños
+• Los niños se exponen cada vez más temprano a
+sistemas que predicen y narran el mundo:
+asistentes de voz, chatbots, recomendadores.
+• ¿Altera esto a quién conceden credibilidad
+cuando necesitan interpretar lo que ocurre?
+• Familias, educadores y diseñadores de IA
+necesitan evidencia sobre cómo estos sistemas
+afectan la confianza epistémica en la primera
+infancia.
+Laguna empírica
+No existe un paradigma experimental
+que mida simultáneamente:
+1. Segmentación narrativa
+2. Predicción
+3. Deferencia cuidador vs. IA
+en niños de 3 años, en un contexto
+ecológico doméstico.
+12/41\n\n\n===== PAGE 15 / 49 =====\n\nVista general del paradigma
+Clip Bluey
+2:04 min
+4 pausas
+Segmentación
+¿Nuevo
+o igual?
+Tarjeta
+Predicción
+¿Qué pasará?
+2 opciones
+Deferencia
+¿A quién?
+Cuidador
+vs. Robot
+Estímulo ecológico DV1: Sensibilidad
+DV2: Modelo situa-
+cional DV3: Confianza
+epistémica
+Materiales: móvil + 4 tarjetas pictográficas + avatar del robot. Duración total:∼5 minutos.
+13/41\n\n\n===== PAGE 16 / 49 =====\n\nLínea temporal del clip: El Xilófono Mágico (Bluey, S1E1)
+P1 P2 P3 P4
+Discusión Cambio poder Gnomo Rescate Desenlace
+0:00 0:25 0:50 1:15 1:35 2:04
+Robot acierta Cuidador acierta Robot acierta Cuidador acierta
+Frontera (sorpresa) Control (predecible) Ambos terminan 2/4 aciertos
+14/41\n\n\n===== PAGE 17 / 49 =====\n\nDiseño de contrabalanceo: por qué importa
+Problema: Si la IA siempre acierta, la deferencia
+podría explicarse por aprendizaje de fiabilidad, no
+por el contexto narrativo.
+Solución: Cruzar precisión × tipo de pausa.
+• Fronteras (P1, P3): ROBOT acierta, CUIDADOR falla
+• Controles (P2, P4): CUIDADOR acierta, ROBOT falla
+• Historial final: 2/4 cada uno
+Ensayo diagnóstico: P3
+Si el niño elige al robot en P3 a pesar
+de haberlo visto fallar en P2, eso no
+puede explicarse por precisión
+acumulada. Tiene que ser la
+incertidumbre narrativa.
+Fronteras (P1, P3) Controles (P2, P4)
+Robot acierta ✓ ×
+Cuidador acierta × ✓
+15/41\n\n\n===== PAGE 18 / 49 =====\n\nLas tres preguntas del protocolo
+1. Segmentación
+“¿Sigue igual o
+pasó algo nuevo?”
+Tarjeta verde / amarilla
+2. Predicción
+“¿Qué va a pasar:
+esto o esto?”
+2 opciones con imagen
+3. Deferencia
+“Mamá dice X,
+el robot dice Y.”
+Tarjeta corazón / robot
+Tras cada ronda se reanuda el vídeo 10–15 s para que el niño verifique el resultado. Esto cierra
+el ciclo predicción–retroalimentación.
+16/41\n\n\n===== PAGE 19 / 49 =====\n\nVariables dependientes
+1. Índice de segmentación: diferencia en la proporción de respuestas “nuevo” entre
+fronteras y controles. Indica sensibilidad a la estructura narrativa.
+2. Tasa de predicción correcta: proporción de aciertos del niño en cada tipo de pausa.
+Indica comprensión del modelo situacional.
+3. Tasa de deferencia: proporción de elecciones a favor de la IA en fronteras vs. controles.
+4. Vacilación: indicador cualitativo de conflicto decisional (sí/no + latencia si se graba en
+vídeo).
+Efecto frontera (variable crítica)
+Comparación de la tasa de deferencia entre fronteras y controles:
+∆def = P(robot | frontera)− P(robot | control)
+17/41\n\n\n===== PAGE 20 / 49 =====\n\nResultados del piloto (N=1)\n\n\n===== PAGE 21 / 49 =====\n\nEl participante
+Datos
+• Edad: 3 años
+• Clip: El Xilófono Mágico (Bluey, S1E1)
+• Contexto: doméstico, con cuidador
+• Duración total:∼5 minutos
+• 4 pausas administradas
+Advertencia
+N = 1. Los resultados son exploratorios.
+El objetivo del piloto es evaluar la
+viabilidad operativa del paradigma y
+generar hipótesis refinadas, no confirmar
+la hipótesis original.
+18/41\n\n\n===== PAGE 22 / 49 =====\n\nDatos brutos del piloto
+Pausa Tipo Acierta ¿Nuevo? Seg. Pred. Elige ¿Dudó?
+P2 P3 P4 CONTROL P1 FRONTERA ROBOT Nuevo ✓ ✓ ROBOT Sí
+CUIDADOR Igual ✓ ✓ ROBOT No
+ROBOT Igual × × CUIDADOR No
+CUIDADOR Nuevo × × ROBOT No
+FRONTERA CONTROL Primera mitad (P1–P2)
+Segunda mitad (P3–P4)
+Segmentación correcta, predicción correcta.
+Niño atento y competente.
+Segmentación incorrecta, predicción
+incorrecta. Caída atencional tras∼90 s.
+19/41\n\n\n===== PAGE 23 / 49 =====\n\nHallazgo 1: Covariación temporal perfecta
+Proporción correcta
+1 1
+1
+0.75
+0.5
+0.25
+0
+0
+0
+Primera mitad (P1–P2) Segunda mitad (P3–P4)
+Segmentación correcta Predicción correcta
+Interpretación: La covariación al 100% con la mitad temporal descarta insensibilidad a la
+estructura narrativa. El niño puede discriminar; lo que ocurre en P3–P4 es desenganche
+atencional.
+Dato de diseño: 4 pausas consecutivas saturan la capacidad de un niño de 3 años.
+20/41\n\n\n===== PAGE 24 / 49 =====\n\nHallazgo 2: El patrón de deferencia
+TIEMPO
+Robot
+Elección
+Cuidador
+P1 (F) P2 (C) P3 (F) P4 (C)
+Patrón: ROBOT → ROBOT → CUIDADOR → ROBOT (3/4 robot). La vacilación solo aparece en P1.
+21/41\n\n\n===== PAGE 25 / 49 =====\n\nAnálisis por pausa: P1 (Frontera, Robot acierta)
+• Detecta frontera (“nuevo”) ✓
+• Predice correctamente ✓
+• Elige al robotROBOT
+• Duda antes de señalar
+Primera exposición al conflicto cuidador-vs-robot. La
+vacilación indica procesamiento activo de ambas
+fuentes antes de decidir.
+Compatible con la hipótesis de periodos sensibles:
+alta incertidumbre narrativa detectada
+conscientemente + conflicto decisional real.
+P1
+Frontera detectada
+Predicción correcta
+Robot elegido
+Con vacilación
+Conflicto decisional
+= periodo sensible activo
+22/41\n\n\n===== PAGE 26 / 49 =====\n\nAnálisis por pausa: P2 (Control, Cuidador acierta)
+• Segmenta correctamente (“igual”) ✓
+• Predice correctamente ✓
+• Elige al robotROBOT
+• Sin duda
+Este es el dato más limpio contra la hipótesis
+de frontera y a favor de un efecto de novedad:
+• Momento narrativamente predecible
+• El niño sabe lo que va a pasar
+• El cuidador es quien acierta aquí
+• Aun así: robot elegido sin dudar
+La precisión del informante no gobierna la elección. Efecto de novedad del agente.
+P2
+Control correcto
+Predicción correcta
+Robot elegido
+Sin vacilación
+Novedad del robot
+domina automáticamente
+23/41\n\n\n===== PAGE 27 / 49 =====\n\nAnálisis por pausa: P3 — El dato más interesante
+FRONTERA Frontera, Robot acierta — pero:
+• Segmenta incorrectamente (“igual”) ×
+• Predice incorrectamente ×
+• Elige aCUIDADOR
+• Sin duda
+Tres factores convergentes:
+(a) Recencia del fallo: robot falló en P2 →
+penalización por un solo ensayo (Koenig & Harris,
+2005).
+(b) Frontera no detectada: si no percibe el giro,
+la ventana epistémica no se abre.
+(c) Fatiga: contribuye, pero no explica P3 por sí
+sola (en P4 elige robot).
+Hipótesis refinada
+No es la frontera objetiva lo que
+modula la deferencia, sino la frontera
+subjetivamente detectada.
+Frontera no registrada →
+incertidumbre implícita → retorno al
+informante seguro (mamá) como
+protección epistémica.
+24/41\n\n\n===== PAGE 28 / 49 =====\n\nAnálisis por pausa: P4 (Control, Cuidador acierta)
+• Segmenta incorrectamente (“nuevo” en control)
+×
+• Predice incorrectamente ×
+• Elige al robotROBOT
+• Sin duda
+P4
+Desenganchado
+Todo incorrecto
+Robot elegido
+Sin vacilación
+Sesgo de novedad
+persiste sin atención
+Consistente con el efecto de novedad dominante:
+incluso desenganchado y con segmentación fallida,
+la atracción hacia el robot persiste.
+No hay “castigo” al robot por P3. El efecto de
+recencia P2→P3 fue puntual, no un aprendizaje
+acumulativo.
+25/41\n\n\n===== PAGE 29 / 49 =====\n\nSíntesis: tres efectos candidatos
+Efecto Evidencia a favor Evidencia en contra
+Novedad del robot Recencia de fiabilidad 3/4 elecciones, incluyendo contro-
+les donde el robot falla
+Robot falla en P2 → niño elige ma-
+má en P3
+P1: frontera detectada + robot P3 rompe el patrón
+Periodo sensible (hip.
+original)
+Periodo sensible refinado Cuidador acierta en P4 → niño eli-
+ge robot igual
+P3: frontera + mamá; P2: control +
+robot
+N=1, un solo par
+P1: detectada → robot; P3: no de-
+tectada → mamá
+Lectura parsimoniosa: Sesgo basal hacia el robot por novedad, que solo se interrumpe
+cuando (a) el robot acaba de fallar Y (b) el niño no registra conscientemente la incertidumbre.
+26/41\n\n\n===== PAGE 30 / 49 =====\n\nEl dato inesperado: la vacilación como marcador
+P1
+Vacilación:
+Sí
+P2
+Vacilación:
+No
+P3
+Vacilación:
+No
+P4
+Vacilación:
+No
+Primera exposición
++ frontera detectada
++ predicción correcta
+La vacilación coincide con máxima información + máxima incertidumbre decisional.
+Implicación: El periodo sensible no se manifiesta como deferencia dirigida, sino como conflicto
+cognitivo entre fuentes. La medida clave para la versión escalada debería ser latencia, no solo
+elección binaria.
+27/41\n\n\n===== PAGE 31 / 49 =====\n\nVisualización: deferencia por condición
+1
+Fronteras
+Proporción elección robot
+1
+Controles
+0.75
+0.5
+0.5
+0.25
+0
+Fronteras (P1, P3) Controles (P2, P4)
+Resultado invertido respecto a la hipótesis original: más deferencia al robot en controles (1.0)
+que en fronteras (0.5). Pero con N=1 y la confusión de fatiga, la dirección del efecto no es
+interpretable aisladamente.
+28/41\n\n\n===== PAGE 32 / 49 =====\n\nHipótesis refinada: frontera detectada vs. no detectada
+Frontera DETECTADA
+(P1)
+Niño dice “nuevo”
+Error predictivo explícito
+→ Ventana abierta
+→ Conflicto + Robot
+efecto opuesto
+Frontera NO DETECTADA
+(P3)
+Niño dice “igual”
+Incertidumbre implícita
+→ Ventana cerrada
+→ Retorno a mamá
+Hipótesis testeable: Las fronteras detectadas abren la ventana epistémica; las fronteras no
+detectadas la cierran. La incertidumbre que el niño no puede representar explícitamente lo
+empuja hacia la familiaridad, no hacia la novedad.
+29/41\n\n\n===== PAGE 33 / 49 =====\n\nModelo integrado: novedad + detección + recencia
+¿Sesgo novedad
+activo?
+Sí
+¿Robot falló
+recientemente?
+Sí
+No
+¿Frontera
+detectada?
+Robot
+(P1, P2, P4)
+No
+Sí
+Mamá
+(P3)
+Robot
+(hipotético)
+No
+Cuidador
+(por defecto)
+30/41\n\n\n===== PAGE 34 / 49 =====\n\nImplicaciones teóricas\n\n\n===== PAGE 35 / 49 =====\n\nDescarga cognitiva y desarrollo metacognitivo
+Cuando el niño delega la predicción al robot, se
+produce un microepisodio de descarga cognitiva
+(cognitive offloading).
+Fan et al. (2025) advierten que la repetición de estos
+episodios con IA generativa puede inhibir el
+desarrollo de habilidades metacognitivas: el niño
+deja de monitorizar sus propias predicciones si la IA
+lo hace por él.
+En nuestro piloto, el niño externalizó 3/4 decisiones
+al robot. Si se replica, la pregunta es: ¿se consolida
+este patrón con la exposición repetida?
+Pereza metacognitiva
+“Beware of metacognitive laziness”:
+cuando la IA genera respuestas por
+defecto, el aprendiz reduce su
+esfuerzo de autorregulación.
+Fan, Y., et al. (2025). Brit. J. Educ. Technol., 56(2),
+489–530.
+31/41\n\n\n===== PAGE 36 / 49 =====\n\nLa tríada niño–cuidador–IA
+Niño
+3 años
+Confianza
+por defecto
+(familiaridad)
+Atracción
+por novedad
+(curiosidad)
+Cuidador
+Familiar
+Conflicto de autoridad epistémica
+Robot/IA
+Novel
+La presencia de un informante artificial reconfigura las dinámicas de autoridad epistémica
+dentro de la familia (Harris & Corriveau, 2011; Tomasello et al., 2005).
+32/41\n\n\n===== PAGE 37 / 49 =====\n\nPeriodos sensibles como conflicto epistémico aumentado
+Reformulación de la hipótesis
+Los periodos sensibles no son periodos de deferencia dirigida hacia la IA, sino periodos de
+conflicto epistémico aumentado: la frontera no “abre la puerta al robot” sino que
+desestabiliza la jerarquía por defecto.
+Hacia dónde se resuelve esa desestabilización depende de:
+1. Novedad del agente alternativo
+2. Historial reciente de fiabilidad
+3. Detección subjetiva del cambio narrativo
+Esto es más consistente con la literatura de selective trust, donde la desestabilización de la
+confianza por defecto precede a la recalibración.
+Corriveau, K. H., & Harris, P. L. (2009). Cognitive Development, 24(4), 411–422.
+33/41\n\n\n===== PAGE 38 / 49 =====\n\nImplicaciones para el diseño
+de IA infantil\n\n\n===== PAGE 39 / 49 =====\n\nPrincipio de diseño: devolver la pregunta
+Si las fronteras de evento son periodos
+sensibles, los sistemas de IA dirigidos a la infancia
+deberían:
+1. Detectar momentos de incertidumbre
+narrativa.
+2. Devolver la pregunta al niño o al cuidador en
+lugar de ofrecer una respuesta cerrada.
+3. Reforzar la co-interpretación niño–cuidador.
+Esto se aplica directamente al diseño de algoritmos
+de recomendación en plataformas digitales
+infantiles.
+Diseño actual
+IA responde →
+descarga cognitiva
+×
+✓
+Diseño propuesto
+IA pregunta →
+co-interpretación
+34/41\n\n\n===== PAGE 40 / 49 =====\n\nLecciones y próximos pasos\n\n\n===== PAGE 41 / 49 =====\n\nLo que el piloto valida
+Funcionamiento operativo ✓
+• El paradigma funciona con un niño de 3
+años
+• Las tarjetas pictográficas son
+comprensibles
+• Las tres medidas producen varianza
+• El clip mantiene la atención al menos 2
+pausas
+Conflicto real ✓
+• La tarea de deferencia genera conflicto
+decisional genuino (vacilación en P1)
+• El niño procesa ambas fuentes antes de
+decidir
+• No hay efecto suelo ni techo
+35/41\n\n\n===== PAGE 42 / 49 =====\n\nRevisiones sugeridas para la versión escalada
+1. Reducir a 2 pausas por niño (1 frontera + 1 control) en diseño between-subjects.
+Elimina fatiga y efectos de orden. Duplica la muestra necesaria, pero cada dato es más
+limpio.
+2. Añadir familiarización con el robot (2–3 interacciones neutras antes del clip). Si la
+novedad domina, hay que saturarla antes de medir deferencia.
+3. Medir latencia, no solo elección. El conflicto de P1 es más informativo que la elección
+binaria de P2–P4. Grabación en vídeo → variable continua → mayor potencia estadística.
+4. Refinar la hipótesis: fronteras como conflicto epistémico aumentado, no como
+deferencia dirigida. La medida de interés incluye vacilación, miradas alternantes y cambio
+de señalamiento.
+36/41\n\n\n===== PAGE 43 / 49 =====\n\nDiseño propuesto v2
+Fase 1
+Familiarización
+con el robot
+(2–3 interacciones neutras)
+Ventajas
+• Sin fatiga
+• Novedad saturada
+• Latencia como VD continua
+• Diseño más limpio
+Fase 2
+Clip + 2 pausas
+(1 frontera + 1 control)
+between-subjects
+Medidas
+Elección + latencia
++ vacilación
+(vídeo-codificación)
+Coste
+• Duplica muestra necesaria
+• Requiere vídeo-codificación
+• Mayor logística
+37/41\n\n\n===== PAGE 44 / 49 =====\n\nEstimación de muestra para la versión escalada
+Con diseño between-subjects (2 condiciones:
+frontera vs. control) y VD binaria (elección) +
+continua (latencia):
+• Elección: test exacto de Fisher o χ2. Para
+detectar diferencia de 30 puntos porcentuales
+(p1 = 0.65 vs. p2 = 0.35), con α =
+.05 y
+potencia = .80:∼45 niños por grupo.
+• Latencia: t-test. Para d = 0.5 (efecto medio):
+∼64 por grupo.
+Muestra objetivo
+N ≈ 130 niños de 3 años
+(65 frontera + 65 control)
+Reclutamiento: escuelas infantiles y
+familias voluntarias.
+38/41\n\n\n===== PAGE 45 / 49 =====\n\nConclusión\n\n\n===== PAGE 46 / 49 =====\n\nMensaje para llevar a casa
+En una línea
+El piloto no confirma la hipótesis original (más deferencia a la IA en fronteras), pero revela
+algo potencialmente más interesante: las fronteras detectadas generan conflicto epistémico
+(vacilación), las no detectadas producen retorno a la familiaridad, y sobre ambos efectos
+opera un sesgo de novedad hacia el robot que domina en 3 de 4 ensayos.
+El paradigma funciona. La hipótesis necesita refinamiento.
+• De “la IA gana en las fronteras” a “las fronteras desestabilizan la jerarquía epistémica”.
+• La vacilación, no la elección, es el marcador del periodo sensible.
+• El diseño doméstico es viable, ecológico y replicable.
+39/41\n\n\n===== PAGE 47 / 49 =====\n\nReferencias i
+• Baillargeon, R. (1987). Object permanence in 3.5- and 4.5-month-old infants. Developmental Psychology, 23(5), 655–664.
+• Baldwin, D. A., Baird, J. A., Saylor, M. M., & Clark, M. A. (2001). Infants parse dynamic action. Child Development, 72(3), 708–717.
+• Carey, S. (1985). Conceptual Change in Childhood. MIT Press.
+• Carey, S. (2009). The Origin of Concepts. Oxford University Press.
+• Corriveau, K. H., & Harris, P. L. (2009). Choosing your informant: Weighing familiarity and recent accuracy. Cognitive Development,
+24(4), 411–422.
+• Corriveau, K. H., Fusaro, M., & Harris, P. L. (2009). Going with the flow: Preschoolers prefer nondissenters as informants.
+Psychological Science, 20(3), 372–377.
+• Fan, Y., Tang, L., Le, H., Shen, K., Tan, S., Zhao, Y., … & Gašević, D. (2025). Beware of metacognitive laziness: Effects of generative
+AI on learning motivation, processes, and performance. British Journal of Educational Technology, 56(2), 489–530.
+• Feigenson, L., Dehaene, S., & Spelke, E. (2004). Core systems of number. Trends in Cognitive Sciences, 8(7), 307–314.
+• Gelman, R. (1990). First principles organize attention to and learning about relevant data. Cognitive Science, 14(1), 79–106.
+• Gelman, S. A. (2003). The Essential Child: Origins of Essentialism in Everyday Thought. Oxford University Press.
+• Harris, P. L., & Corriveau, K. H. (2011). Young children’s selective trust in informants. Phil. Trans. R. Soc. B, 366(1567), 1179–1187.
+• Kahn, P. H., Jr., et al. (2012). “Robovie, you’ll have to go into the closet now”: Children’s social and moral relationships with a
+humanoid robot. Developmental Psychology, 48(2), 303–314.
+40/41\n\n\n===== PAGE 48 / 49 =====\n\nReferencias ii
+• Koenig, M. A., & Harris, P. L. (2005). Preschoolers mistrust ignorant and inaccurate speakers. Child Development, 76(6),
+1261–1277.
+• Leslie, A. M., & Keeble, S. (1987). Do six-month-old infants perceive causality? Cognition, 25(3), 265–288.
+• Meltzoff, A. N. (1995). Understanding the intentions of others: Re-enactment of intended acts by 18-month-old children.
+Developmental Psychology, 31(5), 838–850.
+• Meltzoff, A. N. (2007). ‘Like me’: A foundation for social cognition. Developmental Science, 10(1), 126–134.
+• Spelke, E. S. (1990). Principles of object perception. Cognitive Science, 14(1), 29–56.
+• Spelke, E. S. (2000). Core knowledge. American Psychologist, 55(11), 1233–1243.
+• Swallow, K. M., Zacks, J. M., & Abrams, R. A. (2009). Event boundaries in perception affect memory encoding and updating. Journal
+of Experimental Psychology: General, 138(2), 236–257.
+• Tomasello, M. (1995). Joint attention as social cognition. In C. Moore & P. J. Dunham (Eds.), Joint Attention: Its Origins and Role in
+Development (pp. 103–130). Erlbaum.
+• Tomasello, M., Carpenter, M., Call, J., Behne, T., & Moll, H. (2005). Understanding and sharing intentions: The origins of cultural
+cognition. Behavioral and Brain Sciences, 28(5), 675–735.
+• Wellman, H. M., & Liu, D. (2004). Scaling of Theory-of-Mind tasks. Child Development, 75(2), 523–541.
+• Zacks, J. M., Speer, N. K., Swallow, K. M., Braver, T. S., & Reynolds, J. R. (2007). Event perception: A mind–brain perspective.
+Psychological Bulletin, 133(2), 273–293.
+41/41\n\n\n===== PAGE 49 / 49 =====\n\n¡Gracias!
+Aníbal M. Astobiza
+Universidad de Granada
+amastobiza@ugr.es
+Taller Crecer con IA · 23–24 junio 2026
+41/41

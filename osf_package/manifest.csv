@@ -1,0 +1,22 @@
+local_path,remote_path,description
+osf_package/README_OSF.md,osfstorage/osf_package/README_OSF.md,Package readme
+osf_package/analysis/analysis_bluey_pilot.R,osfstorage/osf_package/analysis/analysis_bluey_pilot.R,Pilot analysis script
+osf_package/analysis/md_to_apa_rtf.py,osfstorage/osf_package/analysis/md_to_apa_rtf.py,Formatting utility
+osf_package/manuscripts/manuscript_improved_APA7.docx,osfstorage/osf_package/manuscripts/manuscript_improved_APA7.docx,Main manuscript DOCX
+osf_package/manuscripts/manuscript_improved_APA7.pdf,osfstorage/osf_package/manuscripts/manuscript_improved_APA7.pdf,Main manuscript PDF
+osf_package/manuscripts/manuscript_journal_APA7_strict.docx,osfstorage/osf_package/manuscripts/manuscript_journal_APA7_strict.docx,APA strict manuscript DOCX
+osf_package/manuscripts/manuscript_journal_APA7_strict.md,osfstorage/osf_package/manuscripts/manuscript_journal_APA7_strict.md,APA strict manuscript source
+osf_package/manuscripts/article_imrad_proof_of_concept.md,osfstorage/osf_package/manuscripts/article_imrad_proof_of_concept.md,IMRaD manuscript source
+osf_package/materials/kit_experimento_bluey_v4.html,osfstorage/osf_package/materials/kit_experimento_bluey_v4.html,Experimental paradigm
+osf_package/outputs/analysis_summary.txt,osfstorage/osf_package/outputs/analysis_summary.txt,Pilot descriptive summary
+osf_package/outputs/figure_1_trial_pattern.png,osfstorage/osf_package/outputs/figure_1_trial_pattern.png,Figure 1
+osf_package/outputs/figure_2_condition_metrics.png,osfstorage/osf_package/outputs/figure_2_condition_metrics.png,Figure 2
+osf_package/outputs/figure_3_temporal_drop.png,osfstorage/osf_package/outputs/figure_3_temporal_drop.png,Figure 3
+osf_package/outputs/pilot_trial_level.csv,osfstorage/osf_package/outputs/pilot_trial_level.csv,Trial-level data
+osf_package/outputs/pilot_summary_by_condition.csv,osfstorage/osf_package/outputs/pilot_summary_by_condition.csv,Condition summary
+osf_package/outputs/pilot_summary_by_half.csv,osfstorage/osf_package/outputs/pilot_summary_by_half.csv,Half-session summary
+osf_package/outputs/pilot_effects.csv,osfstorage/osf_package/outputs/pilot_effects.csv,Derived metrics
+osf_package/registration/osf_analysis_code_statement.txt,osfstorage/osf_package/registration/osf_analysis_code_statement.txt,OSF analysis code field text
+osf_package/registration/osf_pilot_codebook.md,osfstorage/osf_package/registration/osf_pilot_codebook.md,Pilot codebook
+osf_package/source_documents/main-6.pdf,osfstorage/osf_package/source_documents/main-6.pdf,Source presentation PDF
+osf_package/source_documents/propuesta.pdf,osfstorage/osf_package/source_documents/propuesta.pdf,Source proposal PDF

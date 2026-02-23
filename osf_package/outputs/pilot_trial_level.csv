@@ -1,0 +1,5 @@
+"trial","condition","correct_informant","child_segment","seg_correct","pred_correct","chosen_informant","hesitation","half","robot_chosen"
+"P1","Frontier","Robot","New",TRUE,TRUE,"Robot",TRUE,"First",TRUE
+"P2","Control","Caregiver","Same",TRUE,TRUE,"Robot",FALSE,"First",TRUE
+"P3","Frontier","Robot","Same",FALSE,FALSE,"Caregiver",FALSE,"Second",FALSE
+"P4","Control","Caregiver","New",FALSE,FALSE,"Robot",FALSE,"Second",TRUE

@@ -126,6 +126,18 @@ button:disabled {
   opacity: 0.65;
 }
 
+.secondary-btn {
+  width: auto;
+  background: #ffffff;
+  color: var(--ink);
+  border: 1px solid #d1d5db;
+  margin-top: 8px;
+}
+
+.secondary-btn:hover {
+  background: #f8fafc;
+}
+
 @media (max-width: 600px) {
   .card {
     padding: 20px;

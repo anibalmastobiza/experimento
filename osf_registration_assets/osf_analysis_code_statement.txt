@@ -1,0 +1,32 @@
+Primary analysis code is provided in:
+/Users/anibalmonasterioastobiza/Documents/New project/analysis_bluey_pilot.R
+
+The script reconstructs the N=1 pilot trial-level dataset from the protocol and computes:
+1) Trial-level dataset export
+2) Condition-level summaries
+3) Session-half summaries
+4) Effect-size summary metrics
+5) Publication figures
+
+Execution command:
+Rscript "/Users/anibalmonasterioastobiza/Documents/New project/analysis_bluey_pilot.R"
+
+Expected output directory:
+/Users/anibalmonasterioastobiza/Documents/New project/outputs
+
+Expected output files:
+- pilot_trial_level.csv
+- pilot_summary_by_condition.csv
+- pilot_summary_by_half.csv
+- pilot_effects.csv
+- analysis_summary.txt
+- figure_1_trial_pattern.png
+- figure_2_condition_metrics.png
+- figure_3_temporal_drop.png
+
+Software:
+- R (called via Rscript)
+- R packages: ggplot2
+
+Reproducibility note:
+This pilot analysis is descriptive and retrospective (proof-of-concept). No confirmatory inferential population model is executed in this script.

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Moral Intuition Topology Study</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./config.js"></script>
+    <script src="./scenarios.js"></script>
+    <script src="./adaptive.js"></script>
+    <script src="./trialEngine.js"></script>
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <main class="card">
+      <header>
+        <p class="eyebrow">Research Study</p>
+        <h1 id="study-title">Moral Intuition Study</h1>
+      </header>
+
+      <!-- Screen: Session status -->
+      <section id="status-box" class="status-box">
+        <p id="status-text">Checking your Prolific session&hellip;</p>
+      </section>
+
+      <!-- Screen: Session error -->
+      <section id="error-box" class="error-box" hidden>
+        <h2>Session not detected</h2>
+        <p>
+          Please open the study from your Prolific task page so your session
+          can be linked automatically.
+        </p>
+        <button id="preview-btn" type="button" class="secondary-btn">
+          Continue in preview mode
+        </button>
+      </section>
+
+      <!-- Screen: Consent -->
+      <section id="consent-screen" hidden>
+        <h2>Study Information</h2>
+        <div class="consent-info">
+          <p>
+            In this study you will read <strong>35 short moral scenarios</strong>
+            and judge whether the described action is morally permissible or
+            impermissible. After each judgment you will rate your confidence.
+            On some trials you will also be asked to briefly explain your reasoning.
+          </p>
+          <p>
+            There are no right or wrong answers. We are interested in your
+            genuine moral intuitions. The study takes approximately
+            <strong>20&ndash;25 minutes</strong>.
+          </p>
+          <p>
+            Your responses are anonymous. Data will be used exclusively for
+            academic research and stored securely.
+          </p>
+        </div>
+        <label class="consent">
+          <input id="consent-checkbox" type="checkbox" />
+          I consent to anonymous participation and data use for research purposes.
+        </label>
+        <button id="consent-btn" type="button" disabled>Begin Study</button>
+      </section>
+
+      <!-- Screen: Trial -->
+      <section id="trial-screen" hidden>
+        <div class="progress-container">
+          <div class="progress-bar" id="progress-bar"></div>
+          <span class="progress-label" id="progress-label">Trial 1 of 35</span>
+        </div>
+
+        <div class="trial-phase-tag" id="trial-phase-tag">Space-filling</div>
+
+        <div class="scenario-box" id="scenario-box">
+          <p class="scenario-prompt">Is this action morally permissible?</p>
+          <p class="scenario-text" id="scenario-text"></p>
+        </div>
+
+        <div class="choice-area" id="choice-area">
+          <button type="button" class="choice-btn permissible" data-value="permissible">
+            Morally Permissible
+          </button>
+          <button type="button" class="choice-btn impermissible" data-value="impermissible">
+            Morally Impermissible
+          </button>
+        </div>
+
+        <div class="confidence-area" id="confidence-area" hidden>
+          <label for="trial-confidence">How confident are you? (0 = not at all &mdash; 100 = completely)</label>
+          <input id="trial-confidence" type="range" min="0" max="100" value="50" />
+          <output id="trial-confidence-value">50</output>
+        </div>
+
+        <div class="justification-area" id="justification-area" hidden>
+          <label for="trial-justification">In one sentence, why?</label>
+          <textarea id="trial-justification" rows="2" maxlength="300" placeholder="Briefly explain your reasoning&hellip;"></textarea>
+        </div>
+
+        <button id="next-trial-btn" type="button" class="next-btn" hidden>
+          Next
+        </button>
+      </section>
+
+      <!-- Screen: Completion -->
+      <section id="completion-screen" hidden>
+        <h2>Study Complete</h2>
+        <p>Thank you for your participation. Your responses have been recorded.</p>
+        <p id="completion-status"></p>
+      </section>
+    </main>
+  </body>
+</html>

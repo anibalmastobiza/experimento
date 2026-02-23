@@ -25,6 +25,16 @@
     statusText: document.getElementById("status-text"),
     errorBox: document.getElementById("error-box"),
     previewBtn: document.getElementById("preview-btn"),
+    // Demographics
+    demographicsScreen: document.getElementById("demographics-screen"),
+    demographicsForm: document.getElementById("demographics-form"),
+    demographicsBtn: document.getElementById("demographics-btn"),
+    demographicsError: document.getElementById("demographics-error"),
+    demoAge: document.getElementById("demo-age"),
+    demoGender: document.getElementById("demo-gender"),
+    demoEducation: document.getElementById("demo-education"),
+    demoCountry: document.getElementById("demo-country"),
+    demoPhilosophyTraining: document.getElementById("demo-philosophy-training"),
     // Consent
     consentScreen: document.getElementById("consent-screen"),
     consentCheckbox: document.getElementById("consent-checkbox"),
@@ -56,6 +66,7 @@
 
   // --- Current trial state for UI ---
   var currentChoice = null;
+  var demographicsData = null;
 
   // --- Bootstrap ---
   if (realSession.isValid) {
@@ -84,15 +95,84 @@
       return;
     }
 
-    // Hide error, show consent
+    // Hide error, start at demographics screen
     els.errorBox.hidden = true;
     els.statusBox.hidden = true;
-    els.consentScreen.hidden = false;
+    els.demographicsScreen.hidden = false;
+    els.consentScreen.hidden = true;
+    els.trialScreen.hidden = true;
+    els.completionScreen.hidden = true;
 
     if (isPreviewMode) {
       updateStatus_("Preview mode. Responses will not redirect to Prolific.");
       els.statusBox.hidden = false;
     }
+
+    wireDemographicsEvents_(session, isPreviewMode, hasCompletionUrl, canLog);
+    wireConsentEvents_(session, isPreviewMode, hasCompletionUrl, canLog);
+  }
+
+  function wireDemographicsEvents_(session, isPreviewMode, hasCompletionUrl, canLog) {
+    if (els.demographicsForm.dataset.bound === "1") {
+      refreshDemographicsButton_();
+      return;
+    }
+
+    els.demographicsForm.dataset.bound = "1";
+    var fields = [
+      els.demoAge,
+      els.demoGender,
+      els.demoEducation,
+      els.demoCountry,
+      els.demoPhilosophyTraining
+    ];
+
+    fields.forEach(function (field) {
+      if (!field) return;
+      var eventType = field.tagName === "SELECT" ? "change" : "input";
+      field.addEventListener(eventType, function () {
+        refreshDemographicsButton_();
+        els.demographicsError.hidden = true;
+      });
+    });
+
+    refreshDemographicsButton_();
+
+    els.demographicsBtn.addEventListener("click", function () {
+      var parsed = parseDemographics_();
+      if (!parsed) {
+        els.demographicsError.hidden = false;
+        refreshDemographicsButton_();
+        return;
+      }
+
+      demographicsData = parsed;
+      els.demographicsError.hidden = true;
+
+      if (canLog) {
+        fireAndForgetLog_(session, "demographics_submitted", {
+          group: session.group,
+          age: String(demographicsData.age),
+          gender: demographicsData.gender,
+          education: demographicsData.education,
+          country: demographicsData.country,
+          philosophy_training: demographicsData.philosophyTraining
+        });
+      }
+
+      els.demographicsScreen.hidden = true;
+      els.consentScreen.hidden = false;
+      els.consentCheckbox.checked = false;
+      els.consentBtn.disabled = true;
+    });
+  }
+
+  function wireConsentEvents_(session, isPreviewMode, hasCompletionUrl, canLog) {
+    if (els.consentScreen.dataset.bound === "1") {
+      return;
+    }
+
+    els.consentScreen.dataset.bound = "1";
 
     // Consent checkbox enables button
     els.consentCheckbox.addEventListener("change", function () {
@@ -102,6 +182,7 @@
     // Begin study on consent
     els.consentBtn.addEventListener("click", function () {
       if (!els.consentCheckbox.checked) return;
+      if (!demographicsData) return;
 
       els.consentScreen.hidden = true;
 
@@ -120,7 +201,12 @@
       // Log session start (only if fresh)
       if (!wasResumed && canLog) {
         fireAndForgetLog_(session, "session_start", {
-          group: session.group
+          group: session.group,
+          age: String(demographicsData.age),
+          gender: demographicsData.gender,
+          education: demographicsData.education,
+          country: demographicsData.country,
+          philosophy_training: demographicsData.philosophyTraining
         });
       }
 
@@ -137,6 +223,31 @@
       wireTrialEvents_(session, isPreviewMode, hasCompletionUrl, canLog);
       renderTrial_();
     });
+  }
+
+  function refreshDemographicsButton_() {
+    els.demographicsBtn.disabled = parseDemographics_() == null;
+  }
+
+  function parseDemographics_() {
+    var age = Number(els.demoAge.value);
+    var gender = String(els.demoGender.value || "").trim();
+    var education = String(els.demoEducation.value || "").trim();
+    var country = String(els.demoCountry.value || "").trim();
+    var philosophyTraining = String(els.demoPhilosophyTraining.value || "").trim();
+
+    var hasValidAge = Number.isFinite(age) && age >= 18 && age <= 99;
+    if (!hasValidAge || !gender || !education || !country || !philosophyTraining) {
+      return null;
+    }
+
+    return {
+      age: age,
+      gender: gender,
+      education: education,
+      country: country,
+      philosophyTraining: philosophyTraining
+    };
   }
 
   // =========================================================================
@@ -195,6 +306,11 @@
       if (canLog && record) {
         fireAndForgetLog_(session, "trial_response", {
           group: session.group,
+          age: demographicsData ? String(demographicsData.age) : "",
+          gender: demographicsData ? demographicsData.gender : "",
+          education: demographicsData ? demographicsData.education : "",
+          country: demographicsData ? demographicsData.country : "",
+          philosophy_training: demographicsData ? demographicsData.philosophyTraining : "",
           trial_number: String(record.trialNumber),
           trial_type: record.trialType,
           scenario_id: record.scenarioId,
@@ -278,6 +394,11 @@
 
       fireAndForgetLog_(session, "session_complete", {
         group: session.group,
+        age: demographicsData ? String(demographicsData.age) : "",
+        gender: demographicsData ? demographicsData.gender : "",
+        education: demographicsData ? demographicsData.education : "",
+        country: demographicsData ? demographicsData.country : "",
+        philosophy_training: demographicsData ? demographicsData.philosophyTraining : "",
         trial_number: String(allResponses.length),
         response_time_ms: String(totalTime),
         responses_backup: JSON.stringify(allResponses)
@@ -324,6 +445,11 @@
       response: "",
       confidence: "",
       justification: "",
+      age: demographicsData ? String(demographicsData.age) : "",
+      gender: demographicsData ? demographicsData.gender : "",
+      education: demographicsData ? demographicsData.education : "",
+      country: demographicsData ? demographicsData.country : "",
+      philosophy_training: demographicsData ? demographicsData.philosophyTraining : "",
       response_time_ms: "",
       page_url: window.location.href,
       user_agent: navigator.userAgent
@@ -411,6 +537,7 @@
 
   function showError_(msg) {
     els.errorBox.hidden = false;
+    els.demographicsScreen.hidden = true;
     els.consentScreen.hidden = true;
     els.trialScreen.hidden = true;
     updateStatus_(msg);

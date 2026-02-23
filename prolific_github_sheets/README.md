@@ -30,6 +30,7 @@ Each scenario maps to a point in a 5-dimensional moral space:
 ## Trial Structure
 
 Per participant (35 trials, ~25 minutes):
+- **Before trial 1**: Sociodemographic form (age, gender, education, country, philosophy training)
 - **Trials 1–8**: Space-filling (Latin Hypercube sampling across the 5-D space)
 - **Trials 9–35**: Adaptive (kernel-weighted boundary-seeking selects scenarios where moral intuitions are most uncertain)
 - **Every 7th trial**: Free-text justification prompt
@@ -89,6 +90,11 @@ In sheet `raw_data`, each row is one event. Per complete participant: **37 rows*
 | study_id | Prolific study ID |
 | session_id | Prolific session ID |
 | group | `philosopher`, `non_philosopher`, or `unspecified` |
+| age | Participant age |
+| gender | Self-reported gender |
+| education | Highest education completed |
+| country | Country of residence |
+| philosophy_training | Self-reported formal philosophy training (`yes`/`no`) |
 | trial_number | 1–35 |
 | trial_type | `latin_hypercube` or `adaptive` |
 | scenario_id | e.g., `S001` |

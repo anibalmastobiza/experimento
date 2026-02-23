@@ -35,6 +35,55 @@
         </button>
       </section>
 
+      <!-- Screen: Demographics -->
+      <section id="demographics-screen" hidden>
+        <h2>Before We Start</h2>
+        <p class="demographics-intro">
+          Please answer a few sociodemographic questions before starting the study.
+        </p>
+        <form id="demographics-form" novalidate>
+          <label for="demo-age">Age</label>
+          <input id="demo-age" name="age" type="number" min="18" max="99" required />
+
+          <label for="demo-gender">Gender</label>
+          <select id="demo-gender" name="gender" required>
+            <option value="">Select one</option>
+            <option value="woman">Woman</option>
+            <option value="man">Man</option>
+            <option value="non_binary">Non-binary</option>
+            <option value="self_describe">Self-describe</option>
+            <option value="prefer_not_to_say">Prefer not to say</option>
+          </select>
+
+          <label for="demo-education">Highest education completed</label>
+          <select id="demo-education" name="education" required>
+            <option value="">Select one</option>
+            <option value="high_school">High school</option>
+            <option value="technical_or_vocational">Technical or vocational</option>
+            <option value="undergraduate">Undergraduate degree</option>
+            <option value="masters">Master's degree</option>
+            <option value="doctorate">Doctorate</option>
+            <option value="other">Other</option>
+            <option value="prefer_not_to_say">Prefer not to say</option>
+          </select>
+
+          <label for="demo-country">Country of residence</label>
+          <input id="demo-country" name="country" type="text" maxlength="80" required />
+
+          <label for="demo-philosophy-training">Formal philosophy training</label>
+          <select id="demo-philosophy-training" name="philosophy_training" required>
+            <option value="">Select one</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+
+          <p id="demographics-error" class="demographics-error" hidden>
+            Please complete all fields before continuing.
+          </p>
+          <button id="demographics-btn" type="button">Continue</button>
+        </form>
+      </section>
+
       <!-- Screen: Consent -->
       <section id="consent-screen" hidden>
         <h2>Study Information</h2>

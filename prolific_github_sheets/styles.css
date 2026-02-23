@@ -89,6 +89,41 @@ h2 {
   margin: 0 0 10px;
 }
 
+.demographics-intro {
+  color: var(--muted);
+  margin: 0 0 14px;
+}
+
+#demographics-form label {
+  display: block;
+  margin: 10px 0 6px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+#demographics-form input,
+#demographics-form select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  background: #fff;
+}
+
+#demographics-form input:focus,
+#demographics-form select:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.demographics-error {
+  margin: 10px 0 0;
+  color: var(--error-ink);
+  font-size: 0.9rem;
+}
+
 .consent {
   display: block;
   border: 1px dashed var(--line);

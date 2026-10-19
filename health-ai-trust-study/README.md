@@ -16,7 +16,7 @@ npm run test:analysis
 npm run serve
 ```
 
-Open the local address printed by the server. The supplied configuration starts in preview mode until the collector is configured and tested. Preview responses remain in browser memory. The site uses local assets and system fonts, without analytics or third-party client libraries.
+Open the local address printed by the server. The supplied configuration connects to the deployed collector. For an offline preview, set `collectionEnabled: false` in `docs/config.js`; those responses remain in browser memory. The site uses local assets and system fonts, without analytics or third-party client libraries.
 
 ## Google Sheets
 
@@ -41,10 +41,10 @@ Keep `private-setup/`, participant exports, credentials, and analysis output out
 
 ## Research records and analysis
 
-The private collection workbook has a header-only `Sessions` tab, a data dictionary, and a Readme. Each stored row contains the complete authoritative session plus selected searchable columns. Download the `Sessions` tab as CSV and use [the local exporter](analysis/README.md) to create analysis tables. Test sessions are excluded by default.
+The private collection workbook has a `Sessions` tab, a data dictionary, and a Readme. Each stored row contains the complete authoritative session plus selected searchable columns. One automated test session was stored and verified on 19 October 2026; it is marked `mode: test`. Download the `Sessions` tab as CSV and use [the local exporter](analysis/README.md) to create analysis tables. Test sessions are excluded by default.
 
 The primary exploratory measure is mean tokens committed under fixed versus uncertain variable fees. Separate ratings measure reported trust, risk, fee difficulty, and fairness. Fees, uncertainty, outcomes, and risk preferences can all affect commitments. The protocol explains the limits of treating this behaviour as a trust proxy. No individual reinforcement-learning parameter estimation or clinical validity is claimed.
 
 ## Verification
 
-Automated tests exercise randomization, token arithmetic, consent gating, deadline handling, withdrawal, full session progression, payload validation, duplicate handling, acknowledgement origin and iframe checks, and local CSV export. A real-browser preview has been completed through the final debrief. These checks do not establish human completion time, psychometric validity, or a working live Google deployment. See the connection guide for the current deployment verification state.
+All 67 JavaScript tests and 13 Python tests passed. They exercise randomization, token arithmetic, consent gating, deadline handling, withdrawal, full session progression, payload validation, duplicate handling, acknowledgement origin and iframe checks, and local CSV export. A real-browser test completed all stages, received a successful Google acknowledgement, and was independently read back from the private Sheet with all eight earning trials, eight delegation trials, and two rating records. These checks do not establish human completion time or psychometric validity. Signed-out browser behaviour and live retry deduplication have not been verified; retry logic was tested in the automated suite.

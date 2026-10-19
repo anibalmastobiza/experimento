@@ -1,12 +1,12 @@
 # Google Sheets collection setup
 
-The collector source and its local tests are supplied. A private Google spreadsheet has been created with a header-only `Sessions` sheet. A working Apps Script deployment and a real browser-to-Sheets submission still need to be configured and verified before recruitment. The website starts with collection disabled.
+The collector has been deployed with the researcher's explicit authorization. On 19 October 2026, a real-browser test received a successful acknowledgement and the matching response was independently read from the private Sheet. It contained eight earning trials, eight delegation trials and two rating records, and was marked `mode: test`. The website configuration enables participant collection. The instructions below explain how to configure a separate deployment or reproduce the checks.
 
 Researcher: Aníbal Astobiza, University of Granada, amastobiza@ugr.es.
 
 ## 1. Select the private workbook
 
-Use the private workbook delivered separately to the researcher, or create another private Google spreadsheet under the appropriate research account. Its private link and identifier are deliberately omitted from this public source package. Do not publish the spreadsheet or grant participants access. The prepared workbook contains `Readme`, `Sessions`, and `Data dictionary` sheets. `Sessions` has headers only, with no participant or simulated data.
+Use the private workbook delivered separately to the researcher, or create another private Google spreadsheet under the appropriate research account. Its private link and identifier are deliberately omitted from this public source package. Do not publish the spreadsheet or grant participants access. The prepared workbook contains `Readme`, `Sessions`, and `Data dictionary` sheets. `Sessions` includes one verified test response, marked separately from participant data.
 
 The spreadsheet ID is the part between `/d/` and `/edit` in its URL. Store this ID in Apps Script properties. The web page does not need the spreadsheet ID, a Google API key, or an OAuth token.
 
@@ -118,4 +118,4 @@ Run:
 node --test backend/backend.test.cjs
 ```
 
-The mocked Apps Script tests exercise validation, balance arithmetic, unknown-field rejection, origin rejection, closed collection, canonical duplicate detection, conflicting retries, lock contention, header mismatch, and storage failure. They do not execute Google's production runtime, real OAuth authorization, browser redirect behavior, or a live spreadsheet write. Passing these tests is insufficient to claim live synchronization.
+The mocked Apps Script tests exercise validation, balance arithmetic, unknown-field rejection, origin rejection, closed collection, canonical duplicate detection, conflicting retries, lock contention, header mismatch, and storage failure. Separately, the real-browser test verified Google deployment, authorization, a production write, and the browser acknowledgement. Live retry deduplication, signed-out browsers, and a real five-minute timeout submission have not been verified; these conditions were covered by local simulated tests where applicable.
